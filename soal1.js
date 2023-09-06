@@ -58,9 +58,13 @@ function checkAccessLevel(req, res, next) {
   // gunakan unicode-shift-cipher shift 5 dan 10
   if (userAccessLevel === "firns") {
     // Jika tingkat akses adalah admin, tampilkan tampilan admin
-    res.send("mungkin bukan admin yang ini");
+    res.send("mungkin bukan admin yang ini clue : kepanjangan dari admin");
   } else if (userAccessLevel === "knwsxs}~|k~y|") {
     res.send("cyco{s1mpl3_st3g_w3b}");
+  } else if (userAccessLevel === "admin") {
+    res.send(
+      "hai admin ,tapi bukan disini flagnya clue : antara 5 dan 10 ya (lanjutan clue pada gambar)"
+    );
   } else if (userAccessLevel === "user") {
     // Jika tingkat akses adalah user, tampilkan tampilan user
     res.send(
