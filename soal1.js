@@ -60,7 +60,7 @@ function checkAccessLevel(req, res, next) {
     // Jika tingkat akses adalah admin, tampilkan tampilan admin
     res.send("mungkin bukan admin yang ini clue : kepanjangan dari admin");
   } else if (userAccessLevel === "knwsxs}~|k~y|") {
-    res.send("cyco{s1mpl3_st3g_w3b}");
+    res.send("CycoFlag{s1mpl3_st3g_w3b}");
   } else if (userAccessLevel === "admin") {
     res.send(
       "hai admin ,tapi bukan disini flagnya clue : antara 5 dan 10 ya (lanjutan clue pada gambar)"
