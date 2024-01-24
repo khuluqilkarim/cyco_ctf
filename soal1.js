@@ -26,7 +26,7 @@ function checkReferer(req, res, next) {
   const referer = req.get("Referer");
 
   // Ganti dengan referer yang diharapkan
-  const expectedReferer = "http://cycologyittelkomsby.com";
+  const expectedReferer = "https://cycologyittelkomsby.com";
 
   if (referer !== expectedReferer) {
     // Jika referer tidak sesuai, kirim respons "Saya hanya percaya kunjungan pengguna melalui situs web asli Cycology"
@@ -96,7 +96,7 @@ app.get("/logout", (req, res) => {
 // Halaman yang memeriksa user agent, referer, dan tingkat akses
 app.get("/", (req, res) => {
   res.cookie("accessLevel", "user");
-  res.send("selamat datang\nharap lakukan login");
+  res.send("selamat datang \nharap lakukan login dilaman \login\nini soal ctf dari cycology");
 });
 
 app.listen(port, () => {
